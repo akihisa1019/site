@@ -2,79 +2,115 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
+    <style></style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
+  <script type="text/javascript">
+    $(document).ready(function(){
+ 
+     $('.fade_off').hide().delay(200).fadeIn(2000);
+ 
+ 
+   $(window).scroll(function (){
+     $(".fade_off").each(function(){
+       var imgPos = $(this).offset().top;
+       var scroll = $(window).scrollTop();
+       var windowHeight = $(window).height();
+       if (scroll > imgPos -windowHeight+windowHeight/2){
+         $(this).addClass("fade_on");
+       } else {
+         $(this).removeClass("fade_on");
+       }
+     });
+   });
+ });
+ 
+   </script>
+    
     <header></header>
+
     <div class="con1">
         <div class="center">
         <h1>morihira</h1>
         <hr>
         <p>
-            エヴァとモンストが好き。
+            釣りを趣味にしたいです。
         </p>
         </div>
     </div>
     
+<div class="fade_off">
 <div class="con1">
     <div class="center">
         <div class="flex">
             <div class="text">
-                <h3>モンスト</h3>
+                <h3>新世紀エヴァンゲリオン/ヱヴァンゲリヲン新劇場版</h3>
     
                 <p>
-                    いいゲーム
+                    主人公が、病んでいます。<br>シンエヴァ:||が楽しみですね。
                 </p>
               
             </div>
-            <img src="monsuto.jfif">
+            <img src="shinji.jpg">
         </div>
     </div>
 </div>
+</div>
     
-
+<div class="fade_off">
 <div class="con1">
     <div class="center">
-        <div class="flex">
-            <div class="flex2">
+         <div class="flex2">
                 <div class="text">
-                 <h3>新世紀エヴァンゲリオン</h3>
+                 <h3>ソード・アート・オンライン（SAO）</h3>
     
                  <p>
-                 素晴らしいアニメ
+                    主人公が、イキっています。<br>プログレッシブが楽しみですね。
                  </p>
                 
-                </div>
-                <img src="eva.jpg">
-            </div>
-        </div>
+             </div>
+             <img src="ikirito.jpg">
+          </div>
     </div>
 </div>
-<div class="con1">
-    <div class="center">
-        <div class="flex">
-            <div class="text">
-                <h3>おにぎり</h3>
+</div>
+
+<div class="fade_off">
+    <div class="con1">
+      <div class="center">
+            <div class="flex">
+               <div class="text">
+                   <h3>進撃の巨人</h3>
     
-                <p>
-                そこらへんのおにぎり
-                </p>
+                   <p>
+                      主人公が、よくわかりません。<br>４期が楽しみですね。
+                   </p>
            
 
+                </div>
+              <img src="shingeki.jpg">
             </div>
-            <img src="onigirazu.jfif">
-        </div>
+      </div>
     </div>
 </div>
+
+<div class="Height　fade_off" style="height: 100vh;">
+  あｋｈｄじｈふぃｓｈｈふいえｈしふぃｈしゅいｈしうひ
+</div>
+
+
 
     <footer>
         <div class="center">
             <h2>morihira akihisa</h2>
         </div>
+
     </footer>
 
-
+    
 </body>
+
 </html>

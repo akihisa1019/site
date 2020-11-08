@@ -45,3 +45,23 @@ footer{
     background: #d34
 }
 
+#d1{
+    width:200px;
+    height:100px;
+    border:1px solid #808080;
+    background-color:#fffff0;
+  }
+
+  .fade_off {
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .fade_on {
+    opacity: 1;
+}
+
